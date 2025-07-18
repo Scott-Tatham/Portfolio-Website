@@ -1,8 +1,12 @@
 namespace PortfolioWebsite
 {
+    using System;
+    using System.Net.Http;
+    using System.Threading.Tasks;
     using Microsoft.AspNetCore.Components.Web;
     using Microsoft.AspNetCore.Components.WebAssembly.Hosting;
-    
+    using Microsoft.Extensions.DependencyInjection;
+
     /// <summary>
     /// The entry point of the application.
     /// </summary>

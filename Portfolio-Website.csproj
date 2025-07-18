@@ -27,4 +27,8 @@
     <Folder Include="wwwroot\pdfs\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <_ContentIncludedByDefault Remove="docs\_framework\blazor.boot.json" />
+  </ItemGroup>
+
 </Project>

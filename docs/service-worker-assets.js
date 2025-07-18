@@ -33,11 +33,11 @@
       "url": "_framework\/icudt_no_CJK.dat"
     },
     {
-      "hash": "sha256-8tCBIdcinwlVLu59ANPFQRfjDQJ8FcQUYBuvXclO6jU=",
+      "hash": "sha256-qwJYCrH95yWfSdyvGdirz3tWQpvjD5iXwaUv0hGoEB8=",
       "url": "_framework\/blazor.boot.json"
     },
     {
-      "hash": "sha256-Y0y\/MAfzr3DUbj5OBKsB5f\/0lBF9xlnTqhOOa\/ru\/jo=",
+      "hash": "sha256-+KglNK0tPRTho+PEcbtFgFLm+sznPX1U1+yC4YIizi0=",
       "url": "_framework\/Microsoft.AspNetCore.Components.wasm"
     },
     {
@@ -93,7 +93,7 @@
       "url": "_framework\/Microsoft.JSInterop.WebAssembly.wasm"
     },
     {
-      "hash": "sha256-XzEnpuWjIzrMKSwdttoWhm2bB+fKEAbOzbxSKYDvG5U=",
+      "hash": "sha256-jLp\/5k8oTbIhlOKGmqEGPD0w5zxUOUan78jcPhGl1Bw=",
       "url": "_framework\/PortfolioWebsite.wasm"
     },
     {
@@ -129,7 +129,7 @@
       "url": "_framework\/System.Net.Primitives.wasm"
     },
     {
-      "hash": "sha256-+Txgha3k8HZai8Es\/ROkPt4ob4Iez3si4vy+QwKidf8=",
+      "hash": "sha256-j1jpT1y6HBXH9A5+zgI\/0CdWj\/d9WlgSPMq5B99xL9s=",
       "url": "_framework\/System.Private.CoreLib.wasm"
     },
     {
@@ -139,6 +139,10 @@
     {
       "hash": "sha256-q1Tt8dpsE2yAqBd0G6+KOHIHxWN7TIBj0KPTaTBEkhA=",
       "url": "_framework\/System.Runtime.InteropServices.JavaScript.wasm"
+    },
+    {
+      "hash": "sha256-G0BTgGGI\/6AXcL1S29KqlZLL3UE5Wrxerhgx17sjMoQ=",
+      "url": "_framework\/System.Runtime.wasm"
     },
     {
       "hash": "sha256-6MNzylZwWvrcz0lIEYRzDE7hxk419qgXWea+RuvlLZ0=",
@@ -3557,5 +3561,5 @@
       "url": "pdfs\/Scott Tatham - Resume.pdf"
     }
   ],
-  "version": "hz8QJDr4"
+  "version": "3N3GWwhY"
 };

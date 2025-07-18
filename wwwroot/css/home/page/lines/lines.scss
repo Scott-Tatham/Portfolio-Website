@@ -1,0 +1,303 @@
+@use "../../colours";
+@use "../../../svg/svg-stroke-animations";
+
+//Shared
+#lines-svg-container
+{
+  z-index: -1;
+}
+
+.line-container > path
+{
+  fill: none;
+  
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  
+  transition-duration: 0.5s;
+  transition-timing-function: ease-out;
+}
+
+.line-container > path:nth-child(1)
+{
+  stroke: colours.$lowlight;
+}
+
+.line-container > path:nth-child(2)
+{
+  stroke: colours.$highlight;
+}
+
+.line-container > path:nth-child(3)
+{
+  stroke: colours.$secondary;
+}
+
+.line-container > path:nth-child(4)
+{
+  stroke: colours.$primary;
+}
+
+.line-container > path:nth-child(5)
+{
+  stroke: colours.$text;
+}
+
+// Horizontal
+@media (min-aspect-ratio: 1/1)
+{
+  #lines-svg-container
+  {
+    left: -100%;
+  }
+
+  .line-container > path
+  {
+    stroke-width: 3%;
+  }
+
+  .line-container > path.line-hovered
+  {
+    stroke-width: 4%;
+  }
+}
+
+#lines-svg-horizontal
+{
+  z-index: -1;
+  
+  width: 200vw;
+  height: 30%;
+
+  top: 70%;
+}
+
+// Vertical
+@media (max-aspect-ratio: 1/1)
+{
+  #lines-svg-container
+  {
+    top: -100%;
+  }
+  
+  .line-container > path
+  {
+    stroke-width: 1.5%;
+  }
+  
+  .line-container > path.line-hovered
+  {
+    stroke-width: 2%;
+  }
+}
+
+#lines-svg-vertical
+{
+  z-index: -1;
+  
+  width: 20%;
+  height: 200vh;
+
+  left: 0;
+}
+
+// Animations
+.stroke-animation-forward-1
+{
+  @include svg-stroke-animations.stroke-animation(100s, -10s);
+}
+
+.stroke-animation-forward-2
+{
+  @include svg-stroke-animations.stroke-animation(200s, -20s);
+}
+
+.stroke-animation-forward-3
+{
+  @include svg-stroke-animations.stroke-animation(300s, -30s);
+}
+
+.stroke-animation-forward-4
+{
+  @include svg-stroke-animations.stroke-animation(400s, -40s);
+}
+
+.stroke-animation-forward-5
+{
+  @include svg-stroke-animations.stroke-animation(500s, -50s);
+}
+
+.stroke-animation-forward-ping-pong-1
+{
+  @include svg-stroke-animations.stroke-animation(100s, -10s, $direction: alternate, $timing: ease-in-out);
+}
+
+.stroke-animation-forward-ping-pong-2
+{
+  @include svg-stroke-animations.stroke-animation(200s, -20s, $direction: alternate, $timing: ease-in-out);
+}
+
+.stroke-animation-forward-ping-pong-3
+{
+  @include svg-stroke-animations.stroke-animation(300s, -30s, $direction: alternate, $timing: ease-in-out);
+}
+
+.stroke-animation-forward-ping-pong-4
+{
+  @include svg-stroke-animations.stroke-animation(400s, -40s, $direction: alternate, $timing: ease-in-out);
+}
+
+.stroke-animation-forward-ping-pong-5
+{
+  @include svg-stroke-animations.stroke-animation(500s, -50s, $direction: alternate, $timing: ease-in-out);
+}
+
+.stroke-animation-backward-1
+{
+  @include svg-stroke-animations.stroke-animation(100s, -10s, $direction: reverse);
+}
+
+.stroke-animation-backward-2
+{
+  @include svg-stroke-animations.stroke-animation(200s, -20s, $direction: reverse);
+}
+
+.stroke-animation-backward-3
+{
+  @include svg-stroke-animations.stroke-animation(300s, -30s, $direction: reverse);
+}
+
+.stroke-animation-backward-4
+{
+  @include svg-stroke-animations.stroke-animation(400s, -40s, $direction: reverse);
+}
+
+.stroke-animation-backward-5
+{
+  @include svg-stroke-animations.stroke-animation(500s, -50s, $direction: reverse);
+}
+
+.stroke-animation-backward-ping-pong-1
+{
+  @include svg-stroke-animations.stroke-animation(100s, -10s, $direction: alternate-reverse, $timing: ease-in-out);
+}
+
+.stroke-animation-backward-ping-pong-2
+{
+  @include svg-stroke-animations.stroke-animation(200s, -20s, $direction: alternate-reverse, $timing: ease-in-out);
+}
+
+.stroke-animation-backward-ping-pong-3
+{
+  @include svg-stroke-animations.stroke-animation(300s, -30s, $direction: alternate-reverse, $timing: ease-in-out);
+}
+
+.stroke-animation-backward-ping-pong-4
+{
+  @include svg-stroke-animations.stroke-animation(400s, -40s, $direction: alternate-reverse, $timing: ease-in-out);
+}
+
+.stroke-animation-backward-ping-pong-5
+{
+  @include svg-stroke-animations.stroke-animation(500s, 50s, $direction: alternate-reverse, $timing: ease-in-out);
+}
+
+.stroke-animation-loop-forward-1
+{
+  @include svg-stroke-animations.stroke-animation(100s, -10s);
+}
+
+.stroke-animation-loop-forward-2
+{
+  @include svg-stroke-animations.stroke-animation(200s, -20s);
+}
+
+.stroke-animation-loop-forward-3
+{
+  @include svg-stroke-animations.stroke-animation(300s, -30s);
+}
+
+.stroke-animation-loop-forward-4
+{
+  @include svg-stroke-animations.stroke-animation(400s, -40s);
+}
+
+.stroke-animation-loop-forward-5
+{
+  @include svg-stroke-animations.stroke-animation(500s, -50s);
+}
+
+.stroke-animation-loop-forward-ping-pong-1
+{
+  @include svg-stroke-animations.stroke-animation(100s, -10s, $direction: alternate, $timing: ease-in-out);
+}
+
+.stroke-animation-loop-forward-ping-pong-2
+{
+  @include svg-stroke-animations.stroke-animation(200s, -20s, $direction: alternate, $timing: ease-in-out);
+}
+
+.stroke-animation-loop-forward-ping-pong-3
+{
+  @include svg-stroke-animations.stroke-animation(300s, -30s, $direction: alternate, $timing: ease-in-out);
+}
+
+.stroke-animation-loop-forward-ping-pong-4
+{
+  @include svg-stroke-animations.stroke-animation(400s, -40s, $direction: alternate, $timing: ease-in-out);
+}
+
+.stroke-animation-loop-forward-ping-pong-5
+{
+  @include svg-stroke-animations.stroke-animation(500s, -50s, $direction: alternate, $timing: ease-in-out);
+}
+
+.stroke-animation-loop-backward-1
+{
+  @include svg-stroke-animations.stroke-animation(100s, -10s, $direction: reverse);
+}
+
+.stroke-animation-loop-backward-2
+{
+  @include svg-stroke-animations.stroke-animation(200s, -20s, $direction: reverse);
+}
+
+.stroke-animation-loop-backward-3
+{
+  @include svg-stroke-animations.stroke-animation(300s, -30s, $direction: reverse);
+}
+
+.stroke-animation-loop-backward-4
+{
+  @include svg-stroke-animations.stroke-animation(400s, -40s, $direction: reverse);
+}
+
+.stroke-animation-loop-backward-5
+{
+  @include svg-stroke-animations.stroke-animation(500s, -50s, $direction: reverse);
+}
+
+.stroke-animation-loop-backward-ping-pong-1
+{
+  @include svg-stroke-animations.stroke-animation(100s, -10s, $direction: alternate-reverse, $timing: ease-in-out);
+}
+
+.stroke-animation-loop-backward-ping-pong-2
+{
+  @include svg-stroke-animations.stroke-animation(200s, -20s, $direction: alternate-reverse, $timing: ease-in-out);
+}
+
+.stroke-animation-loop-backward-ping-pong-3
+{
+  @include svg-stroke-animations.stroke-animation(300s, -30s, $direction: alternate-reverse, $timing: ease-in-out);
+}
+
+.stroke-animation-loop-backward-ping-pong-4
+{
+  @include svg-stroke-animations.stroke-animation(400s, -40s, $direction: alternate-reverse, $timing: ease-in-out);
+}
+
+.stroke-animation-loop-backward-ping-pong-5
+{
+  @include svg-stroke-animations.stroke-animation(500s, -50s, $direction: alternate-reverse, $timing: ease-in-out);
+}

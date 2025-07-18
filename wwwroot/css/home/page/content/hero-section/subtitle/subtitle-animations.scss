@@ -1,0 +1,53 @@
+@use "../../../../colours";
+
+@keyframes pulse-animation
+{
+  0%
+  {
+    opacity: 0;
+  }
+
+  5%
+  {
+    opacity: 1;
+  }
+
+  60%
+  {
+    opacity: 1;
+  }
+
+  70%
+  {
+    opacity: 0;
+  }
+
+  100%
+  {
+    opacity: 0;
+  }
+}
+
+@mixin pulse-animation($duration, $delay: 0s, $iteration: infinite, $direction: normal, $timing: linear)
+{
+  animation-name: pulse-animation;
+  animation-delay: $delay;
+  animation-duration: $duration;
+  animation-direction: $direction;
+  animation-fill-mode: both;
+  animation-iteration-count: $iteration;
+  animation-timing-function: $timing;
+}
+
+@keyframes subtitle-fill-animation
+{
+  from
+  {
+    fill: none;
+  }
+
+  to
+  {
+    fill: colours.$text;
+  }
+}

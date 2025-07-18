@@ -1,0 +1,10 @@
+@keyframes stroke-animation {
+  from {
+    stroke-dashoffset: 0;
+  }
+  to {
+    stroke-dashoffset: 100%;
+  }
+}
+
+/*# sourceMappingURL=svg-stroke-animations.css.map */

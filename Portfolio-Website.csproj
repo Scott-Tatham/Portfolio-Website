@@ -9,6 +9,8 @@
     <RootNamespace>PortfolioWebsite</RootNamespace>
 	<PublishTrimmed>true</PublishTrimmed>
 	<TrimMode>full</TrimMode>
+	<RunAOTCompilation>true</RunAOTCompilation>
+	<BlazorCacheBootResources>false</BlazorCacheBootResources>
   </PropertyGroup>
   
   <ItemGroup>
@@ -33,6 +35,30 @@
 
   <ItemGroup>
     <_ContentIncludedByDefault Remove="docs\_framework\blazor.boot.json" />
+    <_ContentIncludedByDefault Remove="wwwroot\fonts\gruvilicious\1001fonts-gruvilicious-eula.txt" />
+    <_ContentIncludedByDefault Remove="wwwroot\fonts\gruvilicious\gruvilicious.zip" />
+    <_ContentIncludedByDefault Remove="wwwroot\fonts\gruvilicious\Gruvilicious\Gruvilicious-Outline.ttf" />
+    <_ContentIncludedByDefault Remove="wwwroot\fonts\gruvilicious\Gruvilicious\Gruvilicious.ttf" />
+    <_ContentIncludedByDefault Remove="wwwroot\fonts\gruvilicious\__MACOSX\Gruvilicious\._Gruvilicious-Outline.ttf" />
+    <_ContentIncludedByDefault Remove="wwwroot\fonts\gruvilicious\__MACOSX\Gruvilicious\._Gruvilicious.ttf" />
+    <_ContentIncludedByDefault Remove="wwwroot\fonts\thunky\thunky-demo.regular.otf" />
+    <_ContentIncludedByDefault Remove="wwwroot\fonts\steelfish\steelfish bd it.otf" />
+    <_ContentIncludedByDefault Remove="wwwroot\fonts\steelfish\steelfish bd.otf" />
+    <_ContentIncludedByDefault Remove="wwwroot\fonts\steelfish\steelfish eb it.otf" />
+    <_ContentIncludedByDefault Remove="wwwroot\fonts\steelfish\steelfish eb.otf" />
+    <_ContentIncludedByDefault Remove="wwwroot\fonts\steelfish\steelfish outline.otf" />
+    <_ContentIncludedByDefault Remove="wwwroot\fonts\steelfish\steelfish rg it.otf" />
+    <_ContentIncludedByDefault Remove="wwwroot\fonts\steelfish\steelfish rg.otf" />
+    <_ContentIncludedByDefault Remove="wwwroot\fonts\steelfish\steelfish.zip" />
+    <_ContentIncludedByDefault Remove="wwwroot\fonts\steelfish\Typodermic Desktop EULA 2023.pdf" />
+    <_ContentIncludedByDefault Remove="wwwroot\fonts\nonstop\NONSTOP.TTF" />
+    <_ContentIncludedByDefault Remove="wwwroot\fonts\nonstop\nonstop.zip" />
+    <_ContentIncludedByDefault Remove="wwwroot\fonts\nonstop\NONSTOPITALIC.TTF" />
+    <_ContentIncludedByDefault Remove="wwwroot\fonts\nonstop\pizzadudedotdk.txt" />
+    <_ContentIncludedByDefault Remove="wwwroot\fonts\alba\alba.zip" />
+    <_ContentIncludedByDefault Remove="wwwroot\fonts\alba\ALBAM___.TTF" />
+    <_ContentIncludedByDefault Remove="wwwroot\fonts\alba\ALBA____.TTF" />
+    <_ContentIncludedByDefault Remove="wwwroot\fonts\alba\read_me.pdf" />
   </ItemGroup>
 
 </Project>

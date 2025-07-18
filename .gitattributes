@@ -1,2 +1,5 @@
 # Auto detect text files and perform LF normalization
 * text=auto
+
+# Treat all files in the docs folder as binary to preserve exact content
+/docs/** binary

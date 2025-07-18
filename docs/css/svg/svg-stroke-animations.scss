@@ -1,0 +1,23 @@
+@keyframes stroke-animation
+{
+  from
+  {
+    stroke-dashoffset: 0;
+  }
+
+  to
+  {
+    stroke-dashoffset: 100%;
+  }
+}
+
+@mixin stroke-animation($duration, $delay: 0s, $iteration: infinite, $direction: normal, $timing: linear)
+{
+  animation-name: stroke-animation;
+  animation-direction: $direction;
+  animation-delay: $delay;
+  animation-duration: $duration;
+  animation-fill-mode: both;
+  animation-iteration-count: $iteration;
+  animation-timing-function: $timing;
+}

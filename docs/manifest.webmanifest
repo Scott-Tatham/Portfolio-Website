@@ -1,0 +1,22 @@
+{
+  "name": "Portfolio-Website",
+  "short_name": "Portfolio-Website",
+  "id": "./",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#2F2B34",
+  "theme_color": "#FFD460",
+  "prefer_related_applications": false,
+  "icons": [
+    {
+      "src": "icon-512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    },
+    {
+      "src": "icon-192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    }
+  ]
+}

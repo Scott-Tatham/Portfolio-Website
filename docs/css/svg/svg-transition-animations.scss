@@ -1,0 +1,29 @@
+@keyframes opacity-animation
+{
+  from
+  {
+    opacity: 0;
+  }
+
+  to
+  {
+    opacity: 1;
+  }
+}
+
+@mixin appear-animation($delay: 0s, $direction: normal)
+{
+  animation-name: opacity-animation;
+  animation-direction: $direction;
+  animation-delay: $delay;
+  animation-fill-mode: both;
+}
+
+@mixin fade-animation($duration, $delay: 0s, $direction: normal)
+{
+  animation-name: opacity-animation;
+  animation-direction: $direction;
+  animation-duration: $duration;
+  animation-delay: $delay;
+  animation-fill-mode: both;
+}

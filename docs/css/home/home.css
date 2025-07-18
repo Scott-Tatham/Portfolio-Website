@@ -1,0 +1,96 @@
+html {
+  cursor: none;
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  pointer-events: none;
+  background-color: #2F2B34;
+}
+
+#spinner-fill {
+  stroke: #FFD460;
+}
+
+#spinner-mask {
+  stroke: #2D4059;
+}
+
+.image-border-1 {
+  stroke-width: 2%;
+  fill: transparent;
+  transform-box: fill-box;
+  transform-origin: center;
+}
+
+.image-border-2 {
+  stroke-width: 2%;
+  fill: transparent;
+  transform-box: fill-box;
+  transform-origin: center;
+}
+
+.image-border-3 {
+  stroke-width: 3%;
+  fill: transparent;
+  transform-box: fill-box;
+  transform-origin: center;
+}
+
+.stroke-text {
+  stroke: #FFF8EF;
+}
+
+.stroke-primary {
+  stroke: #EA5455;
+}
+
+.stroke-secondary {
+  stroke: #F07B3F;
+}
+
+.stroke-highlight {
+  stroke: #FFD460;
+}
+
+.stroke-lowlight {
+  stroke: #2D4059;
+}
+
+@media (min-aspect-ratio: 1/1) {
+  html {
+    overflow-x: hidden;
+    overflow-y: scroll;
+  }
+  .hidden-horizontal {
+    display: none;
+  }
+}
+@media (max-aspect-ratio: 1/1) {
+  html {
+    overflow-x: scroll;
+    overflow-y: hidden;
+  }
+  .hidden-vertical {
+    display: none;
+  }
+}
+#cursor {
+  z-index: 1;
+  width: 5%;
+  height: 5%;
+  transform: translate(-50%, -50%);
+  fill: #FFF8EF;
+  mix-blend-mode: difference;
+}
+
+/*# sourceMappingURL=home.css.map */

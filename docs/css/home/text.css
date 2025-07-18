@@ -1,0 +1,150 @@
+@font-face {
+  font-family: "He";
+  src: url("../../fonts/thunky/thunky-demo.regular.otf");
+}
+@font-face {
+  font-family: "S";
+  src: url("../../fonts/alba/ALBAS___.ttf");
+}
+@font-face {
+  font-family: "G";
+  src: url("../../fonts/ostrich-sans/ostrich-sans/webfonts/ostrich-black.ttf");
+}
+@font-face {
+  font-family: "Ho";
+  src: url("../../fonts/alba/ALBAS___.ttf");
+}
+.text-colour {
+  stroke: #FFF8EF;
+}
+
+.primary-colour {
+  stroke: #EA5455;
+}
+
+.secondary-colour {
+  stroke: #F07B3F;
+}
+
+.highlight-colour {
+  stroke: #FFD460;
+}
+
+.lowlight-colour {
+  stroke: #2D4059;
+}
+
+.opacity-90 {
+  fill-opacity: 90%;
+  stroke-opacity: 90%;
+}
+
+.opacity-80 {
+  fill-opacity: 80%;
+  stroke-opacity: 80%;
+}
+
+.opacity-70 {
+  fill-opacity: 70%;
+  stroke-opacity: 70%;
+}
+
+.opacity-60 {
+  fill-opacity: 60%;
+  stroke-opacity: 60%;
+}
+
+.opacity-50 {
+  fill-opacity: 50%;
+  stroke-opacity: 50%;
+}
+
+.opacity-40 {
+  fill-opacity: 40%;
+  stroke-opacity: 40%;
+}
+
+.opacity-30 {
+  fill-opacity: 30%;
+  stroke-opacity: 30%;
+}
+
+.opacity-20 {
+  fill-opacity: 20%;
+  stroke-opacity: 20%;
+}
+
+.opacity-10 {
+  fill-opacity: 10%;
+  stroke-opacity: 10%;
+}
+
+.general-text, .general-text-large, .general-text-alternate {
+  font-family: "G", serif;
+  font-size: 50%;
+  fill: #FFF8EF;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.general-text-alternate {
+  fill: #2D4059;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.general-text-large {
+  font-size: 75%;
+}
+
+.menu-text {
+  transition-duration: 0.5s;
+  transition-timing-function: ease-out;
+}
+
+.menu-text.hovered {
+  font-size: 70%;
+}
+
+.fancy-text, .fancy-text-large {
+  font-family: "Ho", serif;
+  font-size: 50%;
+  stroke-width: 0.3px;
+  fill: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.fancy-text-large {
+  font-size: 100%;
+}
+
+.about-rotate-text-container > text:nth-child(2) {
+  will-change: opacity;
+  transform-box: fill-box;
+  transform-style: preserve-3d;
+  transition-duration: 0.5s;
+  transform-origin: bottom;
+}
+
+.about-rotate-text-container > text:nth-child(3) {
+  will-change: opacity;
+  transform-box: fill-box;
+  transform-style: preserve-3d;
+  transition-duration: 0.5s;
+  transform-origin: top;
+  transform: translate3d(0, 100%, 0) rotateX(-90deg);
+}
+
+.about-rotate-text-container:hover > text:nth-child(2) {
+  transform: translate3d(0, -100%, 0) rotateX(-90deg);
+}
+
+.about-rotate-text-container:hover > text:nth-child(3) {
+  transform: translate3d(0, 0, 0) rotateX(0deg);
+}
+
+/*# sourceMappingURL=text.css.map */

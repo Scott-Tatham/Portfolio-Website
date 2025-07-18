@@ -1,0 +1,29 @@
+// Shared
+#page-container
+{
+  display: flex;
+}
+
+// Horizontal
+@media (min-aspect-ratio: 1/1)
+{
+  #page-container
+  {
+    flex-direction: row;
+
+    overflow-x: scroll;
+    overflow-y: hidden;
+  }
+}
+
+// Vertical
+@media (max-aspect-ratio: 1/1)
+{
+  #page-container
+  {
+    flex-direction: column;
+
+    overflow-x: hidden;
+    overflow-y: scroll;
+  }
+}

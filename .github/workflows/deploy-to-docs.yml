@@ -22,7 +22,10 @@ jobs:
 
     - name: Publish Website
       run: dotnet publish Portfolio-Website.csproj -c Release -o publish
-
+      
+    - name: Creat docs If Required
+      run: mkdir -p docs
+      
     - name: Deploy To docs/
       run: |
         rm -rf docs/*

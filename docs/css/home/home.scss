@@ -1,0 +1,139 @@
+@use "colours";
+
+// Shared
+html
+{
+  cursor: none;
+  
+  position: relative;
+  
+  width: 100vw;
+    height: 100vh;
+  
+    // Removes scrollbar.
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  
+    scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar
+{
+  // Removes scrollbar.
+  display: none;
+}
+
+body
+{
+  pointer-events: none;
+  
+  background-color: colours.$background;
+}
+
+#spinner-fill
+{
+  stroke: colours.$highlight;
+}
+
+#spinner-mask
+{
+  stroke: colours.$lowlight;
+}
+
+@mixin image-border
+{
+  fill: transparent;
+
+  transform-box: fill-box;
+  transform-origin: center;
+}
+
+.image-border-1
+{
+  stroke-width: 2%;
+  
+  @include image-border;
+}
+
+.image-border-2
+{
+  stroke-width: 2%;
+
+  @include image-border;
+}
+
+.image-border-3
+{
+  stroke-width: 3%;
+
+  @include image-border;
+}
+
+.stroke-text
+{
+  stroke: colours.$text;
+}
+
+.stroke-primary
+{
+  stroke: colours.$primary;
+}
+
+.stroke-secondary
+{
+  stroke: colours.$secondary;
+}
+
+.stroke-highlight
+{
+  stroke: colours.$highlight;
+}
+
+.stroke-lowlight
+{
+  stroke: colours.$lowlight;
+}
+
+// Horizontal
+@media (min-aspect-ratio: 1/1)
+{
+  html
+  {
+    overflow-x: hidden;
+    overflow-y: scroll;
+  }
+
+  .hidden-horizontal
+  {
+    display: none;
+  }
+}
+
+// Vertical
+@media (max-aspect-ratio: 1/1)
+{
+  html
+  {
+    overflow-x: scroll;
+    overflow-y: hidden;
+  }
+
+  .hidden-vertical
+  {
+    display: none;
+  }
+}
+
+// Shared
+#cursor
+{
+  z-index: 1;
+  
+  width: 5%;
+  height: 5%;
+  
+  transform: translate(-50%, -50%);
+  
+  fill: colours.$text;
+  mix-blend-mode: difference;
+}

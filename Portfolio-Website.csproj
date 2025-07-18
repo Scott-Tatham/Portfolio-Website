@@ -9,7 +9,12 @@
     <RootNamespace>PortfolioWebsite</RootNamespace>
 	<PublishTrimmed>true</PublishTrimmed>
 	<TrimMode>full</TrimMode>
+	<TrimmerRootAssembly Include="PortfolioWebsite" />
   </PropertyGroup>
+  
+  <ItemGroup>
+	<TrimmerRootAssembly Include="Portfolio-Website" />
+  </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly" Version="8.0.4" />

@@ -12,7 +12,7 @@
   </PropertyGroup>
   
   <ItemGroup>
-	<TrimmerRootAssembly Include="Portfolio-Website" />
+	<TrimmerRootAssembly Include="PortfolioWebsite" />
   </ItemGroup>
 
   <ItemGroup>

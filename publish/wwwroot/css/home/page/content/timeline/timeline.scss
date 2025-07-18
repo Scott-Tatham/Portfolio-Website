@@ -1,0 +1,167 @@
+@use "../../../colours";
+
+// Shared
+#timeline-container
+{
+  display: flex;
+}
+
+#timeline-container > div > div:nth-child(1) > svg:nth-child(3n + 2):has(+ svg:hover) > text
+{
+  fill: colours.$secondary;
+}
+
+#timeline-container > div > div:nth-child(1) > svg:nth-child(3n + 3):hover + svg > text
+{
+  fill: colours.$text;
+}
+
+.timeline-container > svg
+{
+  overflow-x: visible;
+  overflow-y: visible;
+}
+
+.timeline-container > svg.auto-pointer-events
+{
+  flex-grow: 3;
+  flex-shrink: 3;
+}
+
+.timeline-container > svg:nth-child(1)
+{
+  flex-grow: 2;
+  flex-shrink: 2;
+}
+
+.timeline-container > svg:nth-child(34)
+{
+  flex-grow: 2;
+  flex-shrink: 2;
+}
+
+.timeline-container > svg > *
+{
+  transition-duration: 0.5s;
+  transition-timing-function: ease-out;
+}
+
+.timeline-container > svg > line
+{
+  stroke: colours.$text;
+
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.timeline-container > svg:hover > line
+{
+  stroke: colours.$primary;
+}
+
+.timeline-container > svg:hover > text.fancy-text
+{
+  font-size: 20%;
+  
+  fill: colours.$secondary;
+}
+
+.year-label
+{
+  position: absolute;
+}
+
+.timeline-event
+{
+  position: absolute;
+}
+
+// Horizontal
+@media (min-aspect-ratio: 1/1)
+{
+  #timeline-container
+  {
+    flex-direction: row;
+
+    overflow-x: scroll;
+    overflow-y: hidden;
+  }
+
+  .timeline-container > svg > line
+  {
+    stroke-width: 5%;
+  }
+
+  .timeline-container > svg:hover > line
+  {
+    stroke-width: 7%;
+  }
+
+  .timeline-container > svg.auto-pointer-events
+  {
+    max-height: calc((100% / 7) * 6);
+  }
+
+  .year-label
+  {
+    bottom: 0;
+
+    min-width: 100%;
+    min-height: calc(100% / 7);
+    max-width: 100%;
+    max-height: calc(100% / 7);
+  }
+
+  .timeline-event
+  {
+    top: 0;
+    left: 20%;
+
+    min-width: 60%;
+    min-height: 60%;
+    max-width: 60%;
+    max-height: 60%;
+  }
+}
+
+// Vertical
+@media (max-aspect-ratio: 1/1)
+{
+  #timeline-container
+  {
+    flex-direction: column;
+
+    overflow-x: hidden;
+    overflow-y: scroll;
+  }
+
+  .timeline-container > svg > line
+  {
+    stroke-width: 3%;
+  }
+
+  .timeline-container > svg:hover > line
+  {
+    stroke-width: 4%;
+  }
+
+  .year-label
+  {
+    bottom: 0;
+    right: 0;
+
+    min-width: calc((100% / 8) * 7);
+    max-width: calc((100% / 8) * 7);
+  }
+
+  .timeline-event
+  {
+    top: 25%;
+    right: 20%;
+
+    min-width: 50%;
+    min-height: 50%;
+    max-width: 50%;
+    max-height: 50%;
+  }
+}

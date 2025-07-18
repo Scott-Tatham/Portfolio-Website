@@ -1,0 +1,12 @@
+@property --translation-x {
+  syntax: "<number>";
+  inherits: false;
+  initial-value: 0;
+}
+@property --translation-y {
+  syntax: "<number>";
+  inherits: false;
+  initial-value: 0;
+}
+
+/*# sourceMappingURL=custom-properties.css.map */

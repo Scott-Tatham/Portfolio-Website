@@ -9,7 +9,6 @@
     <RootNamespace>PortfolioWebsite</RootNamespace>
 	<PublishTrimmed>true</PublishTrimmed>
 	<TrimMode>full</TrimMode>
-	<TrimmerRootAssembly Include="PortfolioWebsite" />
   </PropertyGroup>
   
   <ItemGroup>

@@ -1,0 +1,262 @@
+@use "../../colours";
+@use "../../text";
+
+// Shared
+#menu-svg-container > svg > g > line
+{
+  stroke-width: 6%;
+
+  stroke-linecap: round;
+  stroke-linejoin: round;
+
+  transition-duration: 0.5s;
+  transition-timing-function: ease-out;
+}
+
+#menu-svg-container > svg > g > text
+{
+  @include text.remove-text-selection;
+}
+
+#menu-svg-container > svg > g:nth-child(1) > line
+{
+  stroke: colours.$text;
+}
+
+#menu-svg-container > svg > g:nth-child(2) > line
+{
+  stroke: colours.$primary;
+}
+
+#menu-svg-container > svg > g:nth-child(3) > line
+{
+  stroke: colours.$secondary;
+}
+
+#menu-svg-container > svg > g:nth-child(4) > line
+{
+  stroke: colours.$highlight;
+}
+
+#menu-svg-container > svg > g:nth-child(5) > line
+{
+  stroke: colours.$lowlight;
+}
+
+// Horizontal
+@media (min-aspect-ratio: 1/1)
+{
+  #menu-svg-container
+  {
+    left: -100%;
+  }
+}
+
+#menu-header-svg
+{
+  width: 200vw;
+  height: 30%;
+
+  top: 70%;
+}
+
+#menu-svg-horizontal
+{
+  width: 200vw;
+  height: 30%;
+
+  top: 70%;
+}
+
+// Vertical
+@media (max-aspect-ratio: 1/1)
+{
+  #menu-svg-container
+  {
+    top: -100%;
+  }
+}
+
+#menu-svg-vertical
+{
+  width: 20%;
+  height: 200vh;
+
+  left: 0;
+}
+
+// Hover
+@mixin menu-line-large
+{
+  stroke-width: 8% !important;
+}
+
+@mixin menu-text-large
+{
+  font-size: 28% !important;
+}
+
+@mixin menu-line-small
+{
+  stroke-width: 5.5% !important;
+}
+
+@mixin menu-text-small
+{
+  font-size: 24% !important;
+}
+
+// Start
+.start-menu-button:hover > *
+{
+  @include menu-line-large;
+  @include menu-text-large;
+}
+
+.start-menu-button:hover ~ .about-menu-button > *
+{
+  @include menu-line-small;
+  @include menu-text-small;
+}
+
+.start-menu-button:hover ~ .timeline-menu-button > *
+{
+  @include menu-line-small;
+  @include menu-text-small;
+}
+
+.start-menu-button:hover ~ .projects-menu-button > *
+{
+  @include menu-line-small;
+  @include menu-text-small;
+}
+
+.start-menu-button:hover ~ .contact-menu-button > *
+{
+  @include menu-line-small;
+  @include menu-text-small;
+}
+
+// About
+.start-menu-button:has(~ .about-menu-button:hover) > *
+{
+  @include menu-line-small;
+  @include menu-text-small;
+}
+
+.about-menu-button:hover > *
+{
+  @include menu-line-large;
+  @include menu-text-large;
+}
+
+.about-menu-button:hover ~ .timeline-menu-button > *
+{
+  @include menu-line-small;
+  @include menu-text-small;
+}
+
+.about-menu-button:hover ~ .projects-menu-button > *
+{
+  @include menu-line-small;
+  @include menu-text-small;
+}
+
+.about-menu-button:hover ~ .contact-menu-button > *
+{
+  @include menu-line-small;
+  @include menu-text-small;
+}
+
+// Timeline
+.start-menu-button:has(~ .timeline-menu-button:hover) > *
+{
+  @include menu-line-small;
+  @include menu-text-small;
+}
+
+.about-menu-button:has(~ .timeline-menu-button:hover) > *
+{
+  @include menu-line-small;
+  @include menu-text-small;
+}
+
+.timeline-menu-button:hover > *
+{
+  @include menu-line-large;
+  @include menu-text-large;
+}
+
+.timeline-menu-button:hover ~ .projects-menu-button > *
+{
+  @include menu-line-small;
+  @include menu-text-small;
+}
+
+.timeline-menu-button:hover ~ .contact-menu-button > *
+{
+  @include menu-line-small;
+  @include menu-text-small;
+}
+
+// Projects
+.start-menu-button:has(~ .projects-menu-button:hover) > *
+{
+  @include menu-line-small;
+  @include menu-text-small;
+}
+
+.about-menu-button:has(~ .projects-menu-button:hover) > *
+{
+  @include menu-line-small;
+  @include menu-text-small;
+}
+
+.timeline-menu-button:has(~ .projects-menu-button:hover) > *
+{
+  @include menu-line-small;
+  @include menu-text-small;
+}
+
+.projects-menu-button:hover > *
+{
+  @include menu-line-large;
+  @include menu-text-large;
+}
+
+.projects-menu-button:hover ~ .contact-menu-button > *
+{
+  @include menu-line-small;
+  @include menu-text-small;
+}
+
+// Contact
+.start-menu-button:has(~ .contact-menu-button:hover) > *
+{
+  @include menu-line-small;
+  @include menu-text-small;
+}
+
+.about-menu-button:has(~ .contact-menu-button:hover) > *
+{
+  @include menu-line-small;
+  @include menu-text-small;
+}
+
+.timeline-menu-button:has(~ .contact-menu-button:hover) > *
+{
+  @include menu-line-small;
+  @include menu-text-small;
+}
+
+.projects-menu-button:has(~ .contact-menu-button:hover) > *
+{
+  @include menu-line-small;
+  @include menu-text-small;
+}
+
+.contact-menu-button:hover > *
+{
+  @include menu-line-large;
+  @include menu-text-large;
+}

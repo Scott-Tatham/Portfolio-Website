@@ -1,0 +1,27 @@
+@keyframes pulse-animation {
+  0% {
+    opacity: 0;
+  }
+  5% {
+    opacity: 1;
+  }
+  60% {
+    opacity: 1;
+  }
+  70% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes subtitle-fill-animation {
+  from {
+    fill: none;
+  }
+  to {
+    fill: #FFF8EF;
+  }
+}
+
+/*# sourceMappingURL=subtitle-animations.css.map */

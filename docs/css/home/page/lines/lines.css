@@ -1,0 +1,477 @@
+@keyframes stroke-animation {
+  from {
+    stroke-dashoffset: 0;
+  }
+  to {
+    stroke-dashoffset: 100%;
+  }
+}
+#lines-svg-container {
+  z-index: -1;
+}
+
+.line-container > path {
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  transition-duration: 0.5s;
+  transition-timing-function: ease-out;
+}
+
+.line-container > path:nth-child(1) {
+  stroke: #2D4059;
+}
+
+.line-container > path:nth-child(2) {
+  stroke: #FFD460;
+}
+
+.line-container > path:nth-child(3) {
+  stroke: #F07B3F;
+}
+
+.line-container > path:nth-child(4) {
+  stroke: #EA5455;
+}
+
+.line-container > path:nth-child(5) {
+  stroke: #FFF8EF;
+}
+
+@media (min-aspect-ratio: 1/1) {
+  #lines-svg-container {
+    left: -100%;
+  }
+  .line-container > path {
+    stroke-width: 3%;
+  }
+  .line-container > path.line-hovered {
+    stroke-width: 4%;
+  }
+}
+#lines-svg-horizontal {
+  z-index: -1;
+  width: 200vw;
+  height: 30%;
+  top: 70%;
+}
+
+@media (max-aspect-ratio: 1/1) {
+  #lines-svg-container {
+    top: -100%;
+  }
+  .line-container > path {
+    stroke-width: 1.5%;
+  }
+  .line-container > path.line-hovered {
+    stroke-width: 2%;
+  }
+}
+#lines-svg-vertical {
+  z-index: -1;
+  width: 20%;
+  height: 200vh;
+  left: 0;
+}
+
+.stroke-animation-forward-1 {
+  animation-name: stroke-animation;
+  animation-direction: normal;
+  animation-delay: -10s;
+  animation-duration: 100s;
+  animation-fill-mode: both;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+.stroke-animation-forward-2 {
+  animation-name: stroke-animation;
+  animation-direction: normal;
+  animation-delay: -20s;
+  animation-duration: 200s;
+  animation-fill-mode: both;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+.stroke-animation-forward-3 {
+  animation-name: stroke-animation;
+  animation-direction: normal;
+  animation-delay: -30s;
+  animation-duration: 300s;
+  animation-fill-mode: both;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+.stroke-animation-forward-4 {
+  animation-name: stroke-animation;
+  animation-direction: normal;
+  animation-delay: -40s;
+  animation-duration: 400s;
+  animation-fill-mode: both;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+.stroke-animation-forward-5 {
+  animation-name: stroke-animation;
+  animation-direction: normal;
+  animation-delay: -50s;
+  animation-duration: 500s;
+  animation-fill-mode: both;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+.stroke-animation-forward-ping-pong-1 {
+  animation-name: stroke-animation;
+  animation-direction: alternate;
+  animation-delay: -10s;
+  animation-duration: 100s;
+  animation-fill-mode: both;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+.stroke-animation-forward-ping-pong-2 {
+  animation-name: stroke-animation;
+  animation-direction: alternate;
+  animation-delay: -20s;
+  animation-duration: 200s;
+  animation-fill-mode: both;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+.stroke-animation-forward-ping-pong-3 {
+  animation-name: stroke-animation;
+  animation-direction: alternate;
+  animation-delay: -30s;
+  animation-duration: 300s;
+  animation-fill-mode: both;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+.stroke-animation-forward-ping-pong-4 {
+  animation-name: stroke-animation;
+  animation-direction: alternate;
+  animation-delay: -40s;
+  animation-duration: 400s;
+  animation-fill-mode: both;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+.stroke-animation-forward-ping-pong-5 {
+  animation-name: stroke-animation;
+  animation-direction: alternate;
+  animation-delay: -50s;
+  animation-duration: 500s;
+  animation-fill-mode: both;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+.stroke-animation-backward-1 {
+  animation-name: stroke-animation;
+  animation-direction: reverse;
+  animation-delay: -10s;
+  animation-duration: 100s;
+  animation-fill-mode: both;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+.stroke-animation-backward-2 {
+  animation-name: stroke-animation;
+  animation-direction: reverse;
+  animation-delay: -20s;
+  animation-duration: 200s;
+  animation-fill-mode: both;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+.stroke-animation-backward-3 {
+  animation-name: stroke-animation;
+  animation-direction: reverse;
+  animation-delay: -30s;
+  animation-duration: 300s;
+  animation-fill-mode: both;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+.stroke-animation-backward-4 {
+  animation-name: stroke-animation;
+  animation-direction: reverse;
+  animation-delay: -40s;
+  animation-duration: 400s;
+  animation-fill-mode: both;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+.stroke-animation-backward-5 {
+  animation-name: stroke-animation;
+  animation-direction: reverse;
+  animation-delay: -50s;
+  animation-duration: 500s;
+  animation-fill-mode: both;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+.stroke-animation-backward-ping-pong-1 {
+  animation-name: stroke-animation;
+  animation-direction: alternate-reverse;
+  animation-delay: -10s;
+  animation-duration: 100s;
+  animation-fill-mode: both;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+.stroke-animation-backward-ping-pong-2 {
+  animation-name: stroke-animation;
+  animation-direction: alternate-reverse;
+  animation-delay: -20s;
+  animation-duration: 200s;
+  animation-fill-mode: both;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+.stroke-animation-backward-ping-pong-3 {
+  animation-name: stroke-animation;
+  animation-direction: alternate-reverse;
+  animation-delay: -30s;
+  animation-duration: 300s;
+  animation-fill-mode: both;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+.stroke-animation-backward-ping-pong-4 {
+  animation-name: stroke-animation;
+  animation-direction: alternate-reverse;
+  animation-delay: -40s;
+  animation-duration: 400s;
+  animation-fill-mode: both;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+.stroke-animation-backward-ping-pong-5 {
+  animation-name: stroke-animation;
+  animation-direction: alternate-reverse;
+  animation-delay: 50s;
+  animation-duration: 500s;
+  animation-fill-mode: both;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+.stroke-animation-loop-forward-1 {
+  animation-name: stroke-animation;
+  animation-direction: normal;
+  animation-delay: -10s;
+  animation-duration: 100s;
+  animation-fill-mode: both;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+.stroke-animation-loop-forward-2 {
+  animation-name: stroke-animation;
+  animation-direction: normal;
+  animation-delay: -20s;
+  animation-duration: 200s;
+  animation-fill-mode: both;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+.stroke-animation-loop-forward-3 {
+  animation-name: stroke-animation;
+  animation-direction: normal;
+  animation-delay: -30s;
+  animation-duration: 300s;
+  animation-fill-mode: both;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+.stroke-animation-loop-forward-4 {
+  animation-name: stroke-animation;
+  animation-direction: normal;
+  animation-delay: -40s;
+  animation-duration: 400s;
+  animation-fill-mode: both;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+.stroke-animation-loop-forward-5 {
+  animation-name: stroke-animation;
+  animation-direction: normal;
+  animation-delay: -50s;
+  animation-duration: 500s;
+  animation-fill-mode: both;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+.stroke-animation-loop-forward-ping-pong-1 {
+  animation-name: stroke-animation;
+  animation-direction: alternate;
+  animation-delay: -10s;
+  animation-duration: 100s;
+  animation-fill-mode: both;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+.stroke-animation-loop-forward-ping-pong-2 {
+  animation-name: stroke-animation;
+  animation-direction: alternate;
+  animation-delay: -20s;
+  animation-duration: 200s;
+  animation-fill-mode: both;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+.stroke-animation-loop-forward-ping-pong-3 {
+  animation-name: stroke-animation;
+  animation-direction: alternate;
+  animation-delay: -30s;
+  animation-duration: 300s;
+  animation-fill-mode: both;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+.stroke-animation-loop-forward-ping-pong-4 {
+  animation-name: stroke-animation;
+  animation-direction: alternate;
+  animation-delay: -40s;
+  animation-duration: 400s;
+  animation-fill-mode: both;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+.stroke-animation-loop-forward-ping-pong-5 {
+  animation-name: stroke-animation;
+  animation-direction: alternate;
+  animation-delay: -50s;
+  animation-duration: 500s;
+  animation-fill-mode: both;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+.stroke-animation-loop-backward-1 {
+  animation-name: stroke-animation;
+  animation-direction: reverse;
+  animation-delay: -10s;
+  animation-duration: 100s;
+  animation-fill-mode: both;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+.stroke-animation-loop-backward-2 {
+  animation-name: stroke-animation;
+  animation-direction: reverse;
+  animation-delay: -20s;
+  animation-duration: 200s;
+  animation-fill-mode: both;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+.stroke-animation-loop-backward-3 {
+  animation-name: stroke-animation;
+  animation-direction: reverse;
+  animation-delay: -30s;
+  animation-duration: 300s;
+  animation-fill-mode: both;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+.stroke-animation-loop-backward-4 {
+  animation-name: stroke-animation;
+  animation-direction: reverse;
+  animation-delay: -40s;
+  animation-duration: 400s;
+  animation-fill-mode: both;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+.stroke-animation-loop-backward-5 {
+  animation-name: stroke-animation;
+  animation-direction: reverse;
+  animation-delay: -50s;
+  animation-duration: 500s;
+  animation-fill-mode: both;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+.stroke-animation-loop-backward-ping-pong-1 {
+  animation-name: stroke-animation;
+  animation-direction: alternate-reverse;
+  animation-delay: -10s;
+  animation-duration: 100s;
+  animation-fill-mode: both;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+.stroke-animation-loop-backward-ping-pong-2 {
+  animation-name: stroke-animation;
+  animation-direction: alternate-reverse;
+  animation-delay: -20s;
+  animation-duration: 200s;
+  animation-fill-mode: both;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+.stroke-animation-loop-backward-ping-pong-3 {
+  animation-name: stroke-animation;
+  animation-direction: alternate-reverse;
+  animation-delay: -30s;
+  animation-duration: 300s;
+  animation-fill-mode: both;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+.stroke-animation-loop-backward-ping-pong-4 {
+  animation-name: stroke-animation;
+  animation-direction: alternate-reverse;
+  animation-delay: -40s;
+  animation-duration: 400s;
+  animation-fill-mode: both;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+.stroke-animation-loop-backward-ping-pong-5 {
+  animation-name: stroke-animation;
+  animation-direction: alternate-reverse;
+  animation-delay: -50s;
+  animation-duration: 500s;
+  animation-fill-mode: both;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+/*# sourceMappingURL=lines.css.map */

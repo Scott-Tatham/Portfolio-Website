@@ -1,0 +1,69 @@
+@use "../../../../colours";
+@use "../../../../../svg/svg-transition-animations";
+@use "subtitle-animations";
+
+@import "../../../../text.scss";
+
+#subtitle-container > path
+{
+  fill: none;
+}
+
+#subtitle-container path:nth-child(1)
+{
+  stroke: colours.$lowlight;
+}
+
+#subtitle-container path:nth-child(2)
+{
+  stroke: colours.$highlight;
+}
+
+#subtitle-container path:nth-child(3)
+{
+  stroke: colours.$secondary;
+}
+
+#subtitle-container path:nth-child(4)
+{
+  stroke: colours.$primary;
+}
+
+#subtitle-container path:nth-child(5)
+{
+  fill: colours.$text;
+  stroke: colours.$text;
+}
+
+.stroke-fill-animation-subtitle
+{
+  // Offset from the stroke animation.
+  animation-name: stroke-animation, subtitle-fill-animation;
+  animation-delay: -1s, 2.2s;
+  animation-duration: 3s, 0s;
+  animation-fill-mode: both;
+}
+
+.subtitle-pulse-animation-1
+{
+  // Offset from the previous animation.
+  @include subtitle-animations.pulse-animation(3s, 2.4s);
+}
+
+.subtitle-pulse-animation-2
+{
+  // Offset from the previous animation.
+  @include subtitle-animations.pulse-animation(3s, 2.6s);
+}
+
+.subtitle-pulse-animation-3
+{
+  // Offset from the previous animation.
+  @include subtitle-animations.pulse-animation(3s, 2.8s);
+}
+
+.subtitle-pulse-animation-4
+{
+  // Offset from the previous animation.
+  @include subtitle-animations.pulse-animation(3s, 3s);
+}

@@ -25,6 +25,12 @@ jobs:
 
     - name: Restore
       run: dotnet workload restore
+
+    - name: Compile SCSS
+      uses: gha-utilities/sass-build@v0.6.1
+      with:
+        source: wwwroot/css/**/*.scss
+        destination: .
       
     - name: Publish Website
       run: dotnet publish Portfolio-Website.csproj -c Release -o publish

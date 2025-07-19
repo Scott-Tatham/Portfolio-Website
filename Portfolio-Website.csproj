@@ -9,12 +9,14 @@
     <RootNamespace>PortfolioWebsite</RootNamespace>
     <PublishTrimmed>true</PublishTrimmed>
     <TrimMode>full</TrimMode>
-    <RunAOTCompilation>true</RunAOTCompilation>
+    <RunAOTCompilation>false</RunAOTCompilation>
     <BlazorCacheBootResources>false</BlazorCacheBootResources>
     <WasmEnableStreamingResponse>true</WasmEnableStreamingResponse>
     <EmccInitialHeapSize>16777216</EmccInitialHeapSize>
     <EmccMaximumHeapSize>268435456</EmccMaximumHeapSize>
     <WasmEnableSIMD>true</WasmEnableSIMD>
+    <BlazorEnableTimeZoneSupport>false</BlazorEnableTimeZoneSupport>
+    <BlazorWebAssemblyPreserveCollationData>false</BlazorWebAssemblyPreserveCollationData>
   </PropertyGroup>
   
   <ItemGroup>

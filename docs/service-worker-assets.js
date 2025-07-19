@@ -25,7 +25,7 @@
       "url": "_framework\/icudt_no_CJK.dat"
     },
     {
-      "hash": "sha256-PEdzxWTEb4rilFdrR9jhlfuxbQzDxOGj1sUycyVFofw=",
+      "hash": "sha256-rdN4mcfweKSLIUBLjioCwhO1KELCpWEk3iU+FPESUM4=",
       "url": "_framework\/blazor.boot.json"
     },
     {
@@ -33,7 +33,7 @@
       "url": "_framework\/dotnet.native.8.0.18.lejjz0hlod.js"
     },
     {
-      "hash": "sha256-GxaDSU1Zk5z+3V\/qVBzzR6L7\/jhhIJLZw1K+W7Rc+J0=",
+      "hash": "sha256-nEEbgMp0sgjKpFz6JocsxKQ6eY8Ir21FZrLFANY4WiE=",
       "url": "_framework\/dotnet.native.wasm"
     },
     {
@@ -93,7 +93,7 @@
       "url": "_framework\/Microsoft.JSInterop.WebAssembly.wasm"
     },
     {
-      "hash": "sha256-rxzt30J2B3qZWW7JXBxd0mbQfP6dNfuN20LFAdvnYhU=",
+      "hash": "sha256-lrKIspBOUf8BIyJNTpZ4Hb7P2UHAaI+6EJSLfKAfAss=",
       "url": "_framework\/PortfolioWebsite.wasm"
     },
     {
@@ -373,7 +373,7 @@
       "url": "css\/home\/page\/page.scss"
     },
     {
-      "hash": "sha256-0v0TM9Vn6kM1EpkjdSPMuoCStXZ70Qh5wtSfGWVP2u4=",
+      "hash": "sha256-Qi4GP8DnsQQGudjai9yBmdGtOQV1zoX606DkCh1xNjk=",
       "url": "css\/home\/text.css"
     },
     {
@@ -381,7 +381,7 @@
       "url": "css\/home\/text.css.map"
     },
     {
-      "hash": "sha256-Sb5oQoOMeB0lqwy2KN9sP9\/\/fNo5xpFotVtKdA8quSg=",
+      "hash": "sha256-BWlXmaYWEPNtycF1MRSWJCkvbVo0sdlPHCy0OTYPOu8=",
       "url": "css\/home\/text.scss"
     },
     {
@@ -497,7 +497,7 @@
       "url": "images\/qr-codes\/LinkedIn QR Code.webp"
     },
     {
-      "hash": "sha256-HlwbS7ets4+Ejxs6DUnNBD58V6PD643uR7BN34RuoV0=",
+      "hash": "sha256-3JU48aSQbhmml\/a+A8FEOGKuXl+gmKXTfjLgrC\/2Y0A=",
       "url": "index.html"
     },
     {
@@ -557,5 +557,5 @@
       "url": "pdfs\/Scott-Tatham-Resume.pdf"
     }
   ],
-  "version": "OjtEjZGN"
+  "version": "Velfitqf"
 };

@@ -70,6 +70,50 @@
   top: 100vh;
 }
 
+.left-0 {
+  left: 0;
+}
+
+.left-10 {
+  left: 10vw;
+}
+
+.left-20 {
+  left: 20vw;
+}
+
+.left-30 {
+  left: 30vw;
+}
+
+.left-40 {
+  left: 40vw;
+}
+
+.left-50 {
+  left: 50vw;
+}
+
+.left-60 {
+  left: 60vw;
+}
+
+.left-70 {
+  left: 70vw;
+}
+
+.left-80 {
+  left: 80vw;
+}
+
+.left-90 {
+  left: 90vw;
+}
+
+.left-100 {
+  left: 100vw;
+}
+
 .no-width {
   width: 0;
 }

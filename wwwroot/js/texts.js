@@ -140,7 +140,7 @@ function CopyTextToClipboard(text, feedbackText, feedbackTextAnimationInClass, f
     // Write the text to the clipboard.
     navigator.clipboard.writeText(text).then(() =>
     {
-        // Animate the feeback text.
+        // Animate the feedback text.
         new CopyFeedback(feedbackText.querySelectorAll(`.${feedbackTextAnimationInClass}`)[0], feedbackText.querySelectorAll(`.${feedbackTextAnimationOutClass}`)[0], feedbackTextTimeout);
     });
 }

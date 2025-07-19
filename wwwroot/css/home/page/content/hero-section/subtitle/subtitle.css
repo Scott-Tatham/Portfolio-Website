@@ -33,11 +33,11 @@
 }
 @font-face {
   font-family: "G";
-  src: url("../../fonts/ostrich-black.woff");
+  src: url("./fonts/ostrich-black.woff");
 }
 @font-face {
   font-family: "Ho";
-  src: url("../../fonts/ALBAS___.ttf");
+  src: url("./fonts/ALBAS___.ttf");
 }
 .bold {
   font-weight: bold;
@@ -51,15 +51,6 @@
   font-family: "G", serif;
   font-size: 50%;
   fill: #FFF8EF;
-  -webkit-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
-
-.general-text-p {
-  font-family: "G", serif;
-  font-size: 10rem;
-  color: #FFF8EF;
   -webkit-user-select: none;
   -ms-user-select: none;
   user-select: none;

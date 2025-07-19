@@ -7,18 +7,18 @@
     <ServiceWorkerAssetsManifest>service-worker-assets.js</ServiceWorkerAssetsManifest>
     <AssemblyName>PortfolioWebsite</AssemblyName>
     <RootNamespace>PortfolioWebsite</RootNamespace>
-	<PublishTrimmed>true</PublishTrimmed>
-	<TrimMode>full</TrimMode>
-	<RunAOTCompilation>true</RunAOTCompilation>
-	<BlazorCacheBootResources>false</BlazorCacheBootResources>
-	<WasmEnableStreamingResponse>true</WasmEnableStreamingResponse>
-	<EmccInitialHeapSize>16777216</EmccInitialHeapSize>
-	<EmccMaximumHeapSize>268435456</EmccMaximumHeapSize>
-	<WasmEnableSIMD>true</WasmEnableSIMD>
+    <PublishTrimmed>true</PublishTrimmed>
+    <TrimMode>full</TrimMode>
+    <RunAOTCompilation>true</RunAOTCompilation>
+    <BlazorCacheBootResources>false</BlazorCacheBootResources>
+    <WasmEnableStreamingResponse>true</WasmEnableStreamingResponse>
+    <EmccInitialHeapSize>16777216</EmccInitialHeapSize>
+    <EmccMaximumHeapSize>268435456</EmccMaximumHeapSize>
+    <WasmEnableSIMD>true</WasmEnableSIMD>
   </PropertyGroup>
   
   <ItemGroup>
-	<TrimmerRootAssembly Include="PortfolioWebsite" />
+    <TrimmerRootAssembly Include="PortfolioWebsite" />
   </ItemGroup>
 
   <ItemGroup>

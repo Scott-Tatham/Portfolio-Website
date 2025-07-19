@@ -1,85 +1,20 @@
 @font-face {
-  font-family: "He";
-  src: url("../../fonts/thunky/thunky-demo.regular.otf");
-}
-@font-face {
-  font-family: "S";
-  src: url("../../fonts/alba/ALBAS___.ttf");
-}
-@font-face {
   font-family: "G";
-  src: url("../../fonts/ostrich-sans/ostrich-sans/webfonts/ostrich-black.ttf");
+  src: url("../../fonts/ostrich-black.woff");
 }
 @font-face {
   font-family: "Ho";
-  src: url("../../fonts/alba/ALBAS___.ttf");
+  src: url("../../fonts/ALBAS___.ttf");
 }
-.text-colour {
-  stroke: #FFF8EF;
-}
-
-.primary-colour {
-  stroke: #EA5455;
+.bold {
+  font-weight: bold;
 }
 
-.secondary-colour {
-  stroke: #F07B3F;
+.italics {
+  font-style: italic;
 }
 
-.highlight-colour {
-  stroke: #FFD460;
-}
-
-.lowlight-colour {
-  stroke: #2D4059;
-}
-
-.opacity-90 {
-  fill-opacity: 90%;
-  stroke-opacity: 90%;
-}
-
-.opacity-80 {
-  fill-opacity: 80%;
-  stroke-opacity: 80%;
-}
-
-.opacity-70 {
-  fill-opacity: 70%;
-  stroke-opacity: 70%;
-}
-
-.opacity-60 {
-  fill-opacity: 60%;
-  stroke-opacity: 60%;
-}
-
-.opacity-50 {
-  fill-opacity: 50%;
-  stroke-opacity: 50%;
-}
-
-.opacity-40 {
-  fill-opacity: 40%;
-  stroke-opacity: 40%;
-}
-
-.opacity-30 {
-  fill-opacity: 30%;
-  stroke-opacity: 30%;
-}
-
-.opacity-20 {
-  fill-opacity: 20%;
-  stroke-opacity: 20%;
-}
-
-.opacity-10 {
-  fill-opacity: 10%;
-  stroke-opacity: 10%;
-}
-
-.general-text, .general-text-large, .general-text-alternate {
+.general-text, .menu-text, .menu-text:link, .general-text:link {
   font-family: "G", serif;
   font-size: 50%;
   fill: #FFF8EF;
@@ -88,15 +23,13 @@
   user-select: none;
 }
 
-.general-text-alternate {
-  fill: #2D4059;
-  -webkit-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
-
-.general-text-large {
-  font-size: 75%;
+.selectable-text, .selectable-text:link {
+  font-family: "G", serif;
+  font-size: 50%;
+  fill: #FFF8EF;
+  -webkit-user-select: all;
+  -ms-user-select: all;
+  user-select: all;
 }
 
 .menu-text {
@@ -104,47 +37,288 @@
   transition-timing-function: ease-out;
 }
 
-.menu-text.hovered {
-  font-size: 70%;
-}
-
-.fancy-text, .fancy-text-large {
+.fancy-text {
   font-family: "Ho", serif;
   font-size: 50%;
-  stroke-width: 0.3px;
-  fill: none;
+  stroke-width: 0.3%;
+  fill: #FFF8EF;
   -webkit-user-select: none;
   -ms-user-select: none;
   user-select: none;
 }
 
-.fancy-text-large {
-  font-size: 100%;
+.no-text-decoration {
+  text-decoration: none;
 }
 
-.about-rotate-text-container > text:nth-child(2) {
+.rotate-text-container > text:nth-child(2) {
   will-change: opacity;
   transform-box: fill-box;
   transform-style: preserve-3d;
   transition-duration: 0.5s;
+  transition-timing-function: ease-out;
   transform-origin: bottom;
 }
 
-.about-rotate-text-container > text:nth-child(3) {
+.rotate-text-container > text:nth-child(3) {
   will-change: opacity;
   transform-box: fill-box;
   transform-style: preserve-3d;
   transition-duration: 0.5s;
+  transition-timing-function: ease-out;
   transform-origin: top;
   transform: translate3d(0, 100%, 0) rotateX(-90deg);
 }
 
-.about-rotate-text-container:hover > text:nth-child(2) {
+.rotate-text-container:hover > text:nth-child(2) {
   transform: translate3d(0, -100%, 0) rotateX(-90deg);
 }
 
-.about-rotate-text-container:hover > text:nth-child(3) {
+.rotate-text-container:hover > text:nth-child(3) {
   transform: translate3d(0, 0, 0) rotateX(0deg);
+}
+
+.rotate-text-container > rect {
+  fill: transparent;
+}
+
+.text-colour-transparent {
+  fill: transparent;
+}
+
+.text-colour-text, .text-colour-text:link {
+  fill: #FFF8EF;
+}
+
+.text-colour-primary, .text-colour-primary:link {
+  fill: #EA5455;
+}
+
+.text-colour-secondary, .text-colour-secondary:link {
+  fill: #F07B3F;
+}
+
+.text-colour-highlight, .text-colour-highlight:link {
+  fill: #FFD460;
+}
+
+.text-colour-lowlight, .text-colour-lowlight:link {
+  fill: #2D4059;
+}
+
+.text-size-5 {
+  font-size: 5%;
+}
+
+.text-size-10 {
+  font-size: 10%;
+}
+
+.text-size-15 {
+  font-size: 15%;
+}
+
+.text-size-17 {
+  font-size: 17%;
+}
+
+.text-size-20 {
+  font-size: 20%;
+}
+
+.text-size-23 {
+  font-size: 23%;
+}
+
+.text-size-25 {
+  font-size: 25%;
+}
+
+.text-size-30 {
+  font-size: 30%;
+}
+
+.text-size-35 {
+  font-size: 35%;
+}
+
+.text-size-40 {
+  font-size: 40%;
+}
+
+.text-size-45 {
+  font-size: 45%;
+}
+
+.text-size-50 {
+  font-size: 50%;
+}
+
+.text-size-55 {
+  font-size: 55%;
+}
+
+.text-size-60 {
+  font-size: 60%;
+}
+
+.text-size-61 {
+  font-size: 61%;
+}
+
+.text-size-62 {
+  font-size: 62%;
+}
+
+.text-size-63 {
+  font-size: 63%;
+}
+
+.text-size-64 {
+  font-size: 64%;
+}
+
+.text-size-65 {
+  font-size: 65%;
+}
+
+.text-size-70 {
+  font-size: 70%;
+}
+
+.text-size-75 {
+  font-size: 75%;
+}
+
+.text-size-80 {
+  font-size: 80%;
+}
+
+.text-size-81 {
+  font-size: 81%;
+}
+
+.text-size-82 {
+  font-size: 82%;
+}
+
+.text-size-83 {
+  font-size: 83%;
+}
+
+.text-size-84 {
+  font-size: 84%;
+}
+
+.text-size-85 {
+  font-size: 85%;
+}
+
+.text-size-90 {
+  font-size: 90%;
+}
+
+.text-size-95 {
+  font-size: 95%;
+}
+
+.text-size-100 {
+  font-size: 100%;
+}
+
+.text-size-110 {
+  font-size: 110%;
+}
+
+.text-size-120 {
+  font-size: 120%;
+}
+
+.text-size-130 {
+  font-size: 130%;
+}
+
+.text-size-140 {
+  font-size: 140%;
+}
+
+.text-size-150 {
+  font-size: 150%;
+}
+
+.text-size-160 {
+  font-size: 160%;
+}
+
+.text-size-170 {
+  font-size: 170%;
+}
+
+.text-size-180 {
+  font-size: 180%;
+}
+
+.text-size-190 {
+  font-size: 190%;
+}
+
+.text-size-200 {
+  font-size: 200%;
+}
+
+.text-opacity-0 {
+  fill-opacity: 0;
+  stroke-opacity: 0;
+}
+
+.text-opacity-10 {
+  fill-opacity: 10%;
+  stroke-opacity: 10%;
+}
+
+.text-opacity-20 {
+  fill-opacity: 20%;
+  stroke-opacity: 20%;
+}
+
+.text-opacity-30 {
+  fill-opacity: 30%;
+  stroke-opacity: 30%;
+}
+
+.text-opacity-40 {
+  fill-opacity: 40%;
+  stroke-opacity: 40%;
+}
+
+.text-opacity-50 {
+  fill-opacity: 50%;
+  stroke-opacity: 50%;
+}
+
+.text-opacity-60 {
+  fill-opacity: 60%;
+  stroke-opacity: 60%;
+}
+
+.text-opacity-70 {
+  fill-opacity: 70%;
+  stroke-opacity: 70%;
+}
+
+.text-opacity-80 {
+  fill-opacity: 80%;
+  stroke-opacity: 80%;
+}
+
+.text-opacity-90 {
+  fill-opacity: 90%;
+  stroke-opacity: 90%;
+}
+
+.text-opacity-100 {
+  fill-opacity: 100%;
+  stroke-opacity: 100%;
 }
 
 /*# sourceMappingURL=text.css.map */

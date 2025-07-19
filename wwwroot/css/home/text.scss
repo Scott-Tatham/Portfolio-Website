@@ -8,6 +8,12 @@
 
 @font-face
 {
+  font-family: 'He';
+  src: url("./fonts/thunky-demo.regular.otf");
+}
+
+@font-face
+{
   font-family: 'Ho';
   src: url("./fonts/ALBAS___.ttf");
 }
@@ -32,6 +38,11 @@
 {
   fill-opacity: $opacity;
   stroke-opacity: $opacity;
+}
+
+.no-text-decoration
+{
+  text-decoration: none;
 }
 
 .bold
@@ -74,6 +85,22 @@
   @extend .selectable-text;
 }
 
+.menu-header
+{
+  font-family: 'He', serif;
+  font-size: 50%;
+
+  @include remove-text-selection;
+}
+
+.hero-section-header
+{
+  font-family: 'He', serif;
+  font-size: 200%;
+
+  @include remove-text-selection;
+}
+
 .menu-text
 {
   @extend .general-text;
@@ -91,11 +118,6 @@
   fill: colours.$text;
 
   @include remove-text-selection;
-}
-
-.no-text-decoration
-{
-  text-decoration: none;
 }
 
 @mixin rotate-text()

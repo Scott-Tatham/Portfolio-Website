@@ -2,8 +2,6 @@
 @use "../../../../../svg/svg-transition-animations";
 @use "subtitle-animations";
 
-@import "../../../../text.scss";
-
 #subtitle-container > path
 {
   fill: none;

@@ -25,7 +25,7 @@
       "url": "_framework\/icudt_no_CJK.dat"
     },
     {
-      "hash": "sha256-Zcvz1CytnX5ZgEK+NrBOwUGpVuMoeshszKzpgxoOe9M=",
+      "hash": "sha256-XYTUzn2h9HekP7CgH\/oMAazZ\/RkT8fXjREdLy3EM0U4=",
       "url": "_framework\/blazor.boot.json"
     },
     {
@@ -33,7 +33,7 @@
       "url": "_framework\/dotnet.native.8.0.18.lejjz0hlod.js"
     },
     {
-      "hash": "sha256-i7kOzWnubi0nzMU7hpSbOn\/CRPHqyj+esUpj9r8sF1c=",
+      "hash": "sha256-COL\/A13BtnMRk\/7BAA5AUl3ds4BcUpzfRKptoeQqxmE=",
       "url": "_framework\/dotnet.native.wasm"
     },
     {
@@ -93,7 +93,7 @@
       "url": "_framework\/Microsoft.JSInterop.WebAssembly.wasm"
     },
     {
-      "hash": "sha256-5UyyR6ctEOXGfiDLRLBUwR6kQsxS\/BiSOAIHYp2BFrg=",
+      "hash": "sha256-z0kftekopoMMXHMMRjzv\/7xQndzdjG2Tl\/mARTJlnCA=",
       "url": "_framework\/PortfolioWebsite.wasm"
     },
     {
@@ -265,15 +265,15 @@
       "url": "css\/home\/page\/content\/content.scss"
     },
     {
-      "hash": "sha256-+AyStmsV7QSPino4J75IOQcf\/juT\/ru5K8Q2rqGlegg=",
+      "hash": "sha256-5dXLQhN2tb+XQFT7taEsmHZKDvhz3xfbAVoA444Logg=",
       "url": "css\/home\/page\/content\/hero-section\/header\/header.css"
     },
     {
-      "hash": "sha256-K0PVlU7MWSzIqn+KS9Zx8AdnatKXfHt5wLKkcCGOkEI=",
+      "hash": "sha256-PBIe1nTmYUCb6kbjoXbljokrHzhmiUlyYnMNPsMdsAI=",
       "url": "css\/home\/page\/content\/hero-section\/header\/header.css.map"
     },
     {
-      "hash": "sha256-CWur\/tDCnReufbQaVGLBAgRXmLk4a90mNuZ2i5NXxmo=",
+      "hash": "sha256-d7kd8gaS0iNhmX9ahezdEs\/NIA5IhgSnREKZeuCDnV8=",
       "url": "css\/home\/page\/content\/hero-section\/header\/header.scss"
     },
     {
@@ -301,15 +301,15 @@
       "url": "css\/home\/page\/content\/hero-section\/subtitle\/subtitle-animations.scss"
     },
     {
-      "hash": "sha256-lOohwfgm45ZmwdRG67tQ04R8IaF5SKFDRECCp4F+xD8=",
+      "hash": "sha256-CNrP7sIFPncmwkqWDtxOkiX6uWd9u9L4Hol8nWJvTHY=",
       "url": "css\/home\/page\/content\/hero-section\/subtitle\/subtitle.css"
     },
     {
-      "hash": "sha256-oTiNqiUuCjRh7d4CmA5tuYhBzPyfW2XD3hgFGZPBAFU=",
+      "hash": "sha256-vcsKmj+gUElzswfdUo1lKX7Ufq3Obi3BtdOrnXJrGFk=",
       "url": "css\/home\/page\/content\/hero-section\/subtitle\/subtitle.css.map"
     },
     {
-      "hash": "sha256-XwvZzJzAX5+FYD+z8I8rE39wDbRjug6w96nEgiG02yc=",
+      "hash": "sha256-U0YcpOYkcGZTgyMev1j8HSvI2qBwhjxIek8YBtfKsDI=",
       "url": "css\/home\/page\/content\/hero-section\/subtitle\/subtitle.scss"
     },
     {
@@ -349,11 +349,11 @@
       "url": "css\/home\/page\/lines\/lines.scss"
     },
     {
-      "hash": "sha256-7w260EI1l+tSNjACPxOc0SpUhj43KA29v+U+Ucai86U=",
+      "hash": "sha256-\/IhiudbE1n+MUhoxRHD0LNh8ThHxuFg+\/7+ltu3Ex3c=",
       "url": "css\/home\/page\/menu\/menu.css"
     },
     {
-      "hash": "sha256-KB8Qn2ah1mPIDxUz0WImZOxK53xJEsX4SGeVyRv9be4=",
+      "hash": "sha256-XzFSwKXNaIGhpqR+0JTjzQIBlQ0PpaMVV7Pt9Y07JsM=",
       "url": "css\/home\/page\/menu\/menu.css.map"
     },
     {
@@ -373,15 +373,15 @@
       "url": "css\/home\/page\/page.scss"
     },
     {
-      "hash": "sha256-MIF1AM7g4B4GiOLKHhaoLuYcZn6uHgJrpDVr\/6M78u4=",
+      "hash": "sha256-\/5D55p4mLv4PMKo\/hfbL2yZuPLC\/Aqo4m1J2BwZ5Mig=",
       "url": "css\/home\/text.css"
     },
     {
-      "hash": "sha256-yTdU6vIOXy3+aQkFTmV9F+PCb1AzaFG1PsTiAi\/GGVg=",
+      "hash": "sha256-RdsFsN+FUrY001Cusi7qv0ApSM0POjs+D6M92gZV+Ow=",
       "url": "css\/home\/text.css.map"
     },
     {
-      "hash": "sha256-R7X\/odv24X3c9YX7vlDWyBLmXpIh5JZFzHzu2SMYsYc=",
+      "hash": "sha256-jOCJwz\/n2fJ8\/UTdMToqUmZK7Nne3BGybeyug\/pg4X4=",
       "url": "css\/home\/text.scss"
     },
     {
@@ -427,6 +427,10 @@
     {
       "hash": "sha256-HkBxFvBkv1dnkN9vwYLv+iN2hVyAe62mjUVeLRYChzU=",
       "url": "fonts\/ostrich-black.woff"
+    },
+    {
+      "hash": "sha256-xhn+jD3S59yLMmFQpfHwXMIWEaAemymWlcGBzPPYn0I=",
+      "url": "fonts\/thunky-demo.regular.otf"
     },
     {
       "hash": "sha256-jp\/P3U0ZiWq0xT3f19RmZLlCMkM9oipvQWomRJCO9N8=",
@@ -553,5 +557,5 @@
       "url": "pdfs\/Scott-Tatham-Resume.pdf"
     }
   ],
-  "version": "3SmWQQu5"
+  "version": "Oi4FdTHo"
 };

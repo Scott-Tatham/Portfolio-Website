@@ -1,7 +1,5 @@
 @use "../../../../colours";
 
-@import "../../../../text.scss";
-
 #menu-header-svg > .menu-header
 {
   stroke-width: 0;
@@ -86,20 +84,4 @@
 {
   stroke: colours.$text;
   fill: colours.$text;
-}
-
-.menu-header
-{
-  font-family: 'He', serif;
-  font-size: 50%;
-
-  @include remove-text-selection;
-}
-
-.hero-section-header
-{
-  font-family: 'He', serif;
-  font-size: 200%;
-
-  @include remove-text-selection;
 }

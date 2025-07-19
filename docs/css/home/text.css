@@ -3,9 +3,17 @@
   src: url("./fonts/ostrich-black.woff");
 }
 @font-face {
+  font-family: "He";
+  src: url("./fonts/thunky-demo.regular.otf");
+}
+@font-face {
   font-family: "Ho";
   src: url("./fonts/ALBAS___.ttf");
 }
+.no-text-decoration {
+  text-decoration: none;
+}
+
 .bold {
   font-weight: bold;
 }
@@ -32,6 +40,22 @@
   user-select: all;
 }
 
+.menu-header {
+  font-family: "He", serif;
+  font-size: 50%;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.hero-section-header {
+  font-family: "He", serif;
+  font-size: 200%;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
 .menu-text {
   transition-duration: 0.5s;
   transition-timing-function: ease-out;
@@ -45,10 +69,6 @@
   -webkit-user-select: none;
   -ms-user-select: none;
   user-select: none;
-}
-
-.no-text-decoration {
-  text-decoration: none;
 }
 
 .rotate-text-container > text:nth-child(2) {

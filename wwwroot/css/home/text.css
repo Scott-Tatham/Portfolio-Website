@@ -3,9 +3,17 @@
   src: url("../../fonts/ostrich-black.woff");
 }
 @font-face {
+  font-family: "He";
+  src: url("../../fonts/thunky-demo.regular.otf");
+}
+@font-face {
   font-family: "Ho";
   src: url("../../fonts/ALBAS___.ttf");
 }
+.no-text-decoration {
+  text-decoration: none;
+}
+
 .bold {
   font-weight: bold;
 }
@@ -23,6 +31,15 @@
   user-select: none;
 }
 
+.general-text-p {
+  font-family: "G", serif;
+  font-size: 10rem;
+  color: #FFF8EF;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
 .selectable-text, .selectable-text:link {
   font-family: "G", serif;
   font-size: 50%;
@@ -30,6 +47,22 @@
   -webkit-user-select: all;
   -ms-user-select: all;
   user-select: all;
+}
+
+.menu-header {
+  font-family: "He", serif;
+  font-size: 50%;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.hero-section-header {
+  font-family: "He", serif;
+  font-size: 200%;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .menu-text {
@@ -47,8 +80,10 @@
   user-select: none;
 }
 
-.no-text-decoration {
-  text-decoration: none;
+#menu-svg-container > svg > g > text {
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .rotate-text-container > text:nth-child(2) {

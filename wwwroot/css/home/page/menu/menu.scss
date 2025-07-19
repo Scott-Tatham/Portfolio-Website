@@ -1,5 +1,4 @@
 @use "../../colours";
-@use "../../text";
 
 // Shared
 #menu-svg-container > svg > g > line
@@ -11,11 +10,6 @@
 
   transition-duration: 0.5s;
   transition-timing-function: ease-out;
-}
-
-#menu-svg-container > svg > g > text
-{
-  @include text.remove-text-selection;
 }
 
 #menu-svg-container > svg > g:nth-child(1) > line

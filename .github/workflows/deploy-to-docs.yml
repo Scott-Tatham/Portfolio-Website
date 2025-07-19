@@ -26,11 +26,14 @@ jobs:
     - name: Restore
       run: dotnet workload restore
 
+    - name: Install Dart
+      run: |
+        curl -LJO https://github.com/sass/dart-sass/releases/download/1.77.2/dart-sass-1.77.2-linux-x64.tar.gz
+        tar -xzf dart-sass-1.77.2-linux-x64.tar.gz
+        sudo mv dart-sass/* /usr/local/bin/
+
     - name: Compile SCSS
-      uses: gha-utilities/sass-build@v0.6.1
-      with:
-        source: wwwroot/css/**/*.scss
-        destination: .
+      run: sass wwwroot/css:wwwroot/css
       
     - name: Publish Website
       run: dotnet publish Portfolio-Website.csproj -c Release -o publish

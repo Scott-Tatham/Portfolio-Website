@@ -1,12 +1,11 @@
 /**
  * Initialises the copying specific text with key presses.
- * @param contactButtonClass The class of contact buttons.
  * @param selectableContactTextClass The class of selectable contact text.
  * @param feedbackAnimationInClass The class of feedback elements.
  * @param feedbackAnimationOutClass The class of feedback elements.
  * @param feedbackTimeout The amount of time, in milliseconds, to show the feedback text for.
  */
-window.initialiseKeyCopying = (contactButtonClass, selectableContactTextClass, feedbackAnimationInClass, feedbackAnimationOutClass, feedbackTimeout) =>
+window.initialiseKeyCopying = (selectableContactTextClass, feedbackAnimationInClass, feedbackAnimationOutClass, feedbackTimeout) =>
 {
     //#region Fields
 
@@ -17,12 +16,6 @@ window.initialiseKeyCopying = (contactButtonClass, selectableContactTextClass, f
      * @type {ThrottledEvent}
      */
     const keydownEvent = new ThrottledEvent("keydown", false, 0);
-
-    /**
-     * A collection of contact buttons.
-     * @type {NodeListOf<Element>}
-     */
-    const contactButtons = document.querySelectorAll(`.${contactButtonClass}`);
 
     /**
      * A collection of selectable contact text.
@@ -57,16 +50,11 @@ window.initialiseKeyCopying = (contactButtonClass, selectableContactTextClass, f
     {
         if (eventData.ctrlKey && eventData.code === "KeyC")
         {
-            for (let i = 0; i < contactButtons.length; i++)
+            for (let i = 0; i < selectableContactText.length; i++)
             {
-                if (contactButtons[i].classList.contains("active-contact-button"))
+                if (selectableContactText[i].textContent === window.getSelection().toString())
                 {
-                    if (selectableContactText[i].textContent === window.getSelection().toString())
-                    {
-                        new CopyFeedback(feedbackAnimationIn[i], feedbackAnimationOut[i], feedbackTimeout)
-                        
-                        return;
-                    }
+                    new CopyFeedback(feedbackAnimationIn[i], feedbackAnimationOut[i], feedbackTimeout)
                 }
             }
         }

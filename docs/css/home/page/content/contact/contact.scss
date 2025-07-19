@@ -47,7 +47,7 @@
   display: flex;
 }
 
-.download-button > line
+.download-button > svg > g > line
 {
   stroke: colours.$text;
   stroke-width: 10%;
@@ -59,19 +59,19 @@
   transition-timing-function: ease-out;
 }
 
-.download-button:hover > line
+.download-button:hover > svg > g > line
 {
   stroke: colours.$text;
   stroke-width: 12%;
 }
 
-.download-button > text
+.download-button > svg > g > text
 {
   transition-duration: 0.5s;
   transition-timing-function: ease-out;
 }
 
-.download-button:hover > text
+.download-button:hover > svg > g > text
 {
   font-size: 32%;
 }

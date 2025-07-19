@@ -3,19 +3,19 @@
 @font-face
 {
   font-family: 'G';
-  src: url("./fonts/ostrich-black.woff");
+  src: url("../../fonts/ostrich-black.woff");
 }
 
 @font-face
 {
   font-family: 'He';
-  src: url("./fonts/thunky-demo.regular.otf");
+  src: url("../../fonts/thunky-demo.regular.otf");
 }
 
 @font-face
 {
   font-family: 'Ho';
-  src: url("./fonts/ALBAS___.ttf");
+  src: url("../../fonts/ALBAS___.ttf");
 }
 
 @mixin remove-text-selection
@@ -61,6 +61,16 @@
   font-size: 50%;
 
   fill: colours.$text;
+
+  @include remove-text-selection;
+}
+
+.general-text-p
+{
+  font-family: 'G', serif;
+  font-size: 10rem;
+
+  color: colours.$text;
 
   @include remove-text-selection;
 }
@@ -117,6 +127,11 @@
 
   fill: colours.$text;
 
+  @include remove-text-selection;
+}
+
+#menu-svg-container > svg > g > text
+{
   @include remove-text-selection;
 }
 

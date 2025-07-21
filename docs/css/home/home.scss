@@ -8,13 +8,13 @@ html
   position: relative;
   
   width: 100vw;
-    height: 100vh;
+  height: 100dvh;
   
-    // Removes scrollbar.
-    -ms-overflow-style: none;
-    scrollbar-width: none;
+  // Removes scrollbar.
+  -ms-overflow-style: none;
+  scrollbar-width: none;
   
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 html::-webkit-scrollbar

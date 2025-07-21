@@ -31,43 +31,43 @@
 }
 
 .top-10 {
-  top: 10vh;
+  top: 10dvh;
 }
 
 .top-20 {
-  top: 20vh;
+  top: 20dvh;
 }
 
 .top-30 {
-  top: 30vh;
+  top: 30dvh;
 }
 
 .top-40 {
-  top: 40vh;
+  top: 40dvh;
 }
 
 .top-50 {
-  top: 50vh;
+  top: 50dvh;
 }
 
 .top-60 {
-  top: 60vh;
+  top: 60dvh;
 }
 
 .top-70 {
-  top: 70vh;
+  top: 70dvh;
 }
 
 .top-80 {
-  top: 80vh;
+  top: 80dvh;
 }
 
 .top-90 {
-  top: 90vh;
+  top: 90dvh;
 }
 
 .top-100 {
-  top: 100vh;
+  top: 100dvh;
 }
 
 .left-0 {
@@ -75,43 +75,43 @@
 }
 
 .left-10 {
-  left: 10vw;
+  left: 10dvw;
 }
 
 .left-20 {
-  left: 20vw;
+  left: 20dvw;
 }
 
 .left-30 {
-  left: 30vw;
+  left: 30dvw;
 }
 
 .left-40 {
-  left: 40vw;
+  left: 40dvw;
 }
 
 .left-50 {
-  left: 50vw;
+  left: 50dvw;
 }
 
 .left-60 {
-  left: 60vw;
+  left: 60dvw;
 }
 
 .left-70 {
-  left: 70vw;
+  left: 70dvw;
 }
 
 .left-80 {
-  left: 80vw;
+  left: 80dvw;
 }
 
 .left-90 {
-  left: 90vw;
+  left: 90dvw;
 }
 
 .left-100 {
-  left: 100vw;
+  left: 100dvw;
 }
 
 .no-width {
@@ -131,8 +131,8 @@
 }
 
 .full-view {
-  width: 100vw;
-  height: 100vh;
+  width: 100dvw;
+  height: 100dvh;
 }
 
 .full-screen {

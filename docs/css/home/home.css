@@ -1,7 +1,7 @@
 html {
   cursor: none;
   position: relative;
-  width: 100vw;
+  width: 100dvw;
   height: 100dvh;
   -ms-overflow-style: none;
   scrollbar-width: none;

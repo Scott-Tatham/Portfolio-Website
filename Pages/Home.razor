@@ -2149,6 +2149,21 @@
   #region Fields
   
   #region Readonly Fields
+
+  /// <summary>
+  /// The speed, in frames per second, at which the animation runs. 15 is approximately 60 frames a second, whilst 30 is approximately 30 frames a second.
+  /// </summary>
+  readonly int animationSpeed = 15;
+
+  /// <summary>
+  /// The time, in milliseconds, to delay inputs so that the user doesn't scroll too quickly through the content of the site.
+  /// </summary>
+  readonly int inputDelay = 750;
+  
+  /// <summary>
+  /// The distance, in pixels, that the user must move their finger for it to be considered a swipe.
+  /// </summary>
+  readonly int touchMoveDistance = 10;
   
   /// <summary>
   /// The time, in milliseconds, to show the feedback text for.
@@ -2169,16 +2184,11 @@
   {
     if (firstRender)
     {
-      // 15 is approximately 60 frames a second, whilst 30 is approximately 30 frames a second.
-      const int animationSpeed = 15;
-
-      // Delay inputs so that the user doesn't scroll too quickly through the content of the site.
-      const int inputDelay = 750;
 
       await JSRuntime.InvokeVoidAsync("initialiseCursor", "cursor", "to-diamond-animation", "to-pentagon-animation", "pointer-target", animationSpeed);
       await JSRuntime.InvokeVoidAsync("initialiseSVGTrailEffect", "menu-header", 2, true, false, animationSpeed);
       await JSRuntime.InvokeVoidAsync("initialiseSVGTrailEffect", "hero-section-header", 10, true, false, animationSpeed);
-      await JSRuntime.InvokeVoidAsync("initialiseScrollOverride", "scroll-point", "sticky-scroll-point", "skip-forwards-scroll-point", "skip-backwards-scroll-point", "skip-horizontal-scroll-point", "skip-vertical-scroll-point", "scroll-in-animation", "scroll-out-animation", inputDelay);
+      await JSRuntime.InvokeVoidAsync("initialiseScrollOverride", "scroll-point", "sticky-scroll-point", "skip-forwards-scroll-point", "skip-backwards-scroll-point", "skip-horizontal-scroll-point", "skip-vertical-scroll-point", "scroll-in-animation", "scroll-out-animation", touchMoveDistance, inputDelay);
       await JSRuntime.InvokeVoidAsync("initialiseLinesHoverEffect", "line-container", animationSpeed);
       await JSRuntime.InvokeVoidAsync("initialiseLinesHoverEffect", "line-container", "menu", animationSpeed);
       await JSRuntime.InvokeVoidAsync("initialiseSplitTextLateralEffect", "about-split-text-horizontal", "about-split-text-top-horizontal", "about-split-text-bottom-horizontal", 5, animationSpeed);

@@ -2,7 +2,7 @@ html {
   cursor: none;
   position: relative;
   width: 100vw;
-  height: 100vh;
+  height: 100dvh;
   -ms-overflow-style: none;
   scrollbar-width: none;
   scroll-behavior: smooth;

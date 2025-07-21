@@ -78,9 +78,10 @@ let throttleTimeoutLocal;
  * @param skipVerticalScrollPointClass The class of elements to skip scrolling to when the site is in vertical mode.
  * @param scrollInAnimationClass The class of elements to activate the animation for when scrolling into the element.
  * @param scrollOutAnimationClass The class of elements to activate the animation for when scrolling out of the element.
+ * @param touchMoveDistance The distance, in pixels, that the user must move their finger for it to be considered a swipe.
  * @param throttleTimeout The amount of time, in milliseconds, between updates, to improve performance.
  */
-window.initialiseScrollOverride = (scrollPointClass, stickyScrollPointClass, skipForwardsScrollPointClass, skipBackwardsScrollPointClass, skipHorizontalScrollPointClass, skipVerticalScrollPointClass, scrollInAnimationClass, scrollOutAnimationClass, throttleTimeout) =>
+window.initialiseScrollOverride = (scrollPointClass, stickyScrollPointClass, skipForwardsScrollPointClass, skipBackwardsScrollPointClass, skipHorizontalScrollPointClass, skipVerticalScrollPointClass, scrollInAnimationClass, scrollOutAnimationClass, touchMoveDistance, throttleTimeout) =>
 {
     //#region Fields
 
@@ -97,6 +98,12 @@ window.initialiseScrollOverride = (scrollPointClass, stickyScrollPointClass, ski
      * @type {ThrottledEvent}
      */
     const wheelEvent = new ThrottledEvent("wheel", false, 0);
+
+    /**
+     * An instance of the 'touchstart' event.
+     * @type {ThrottledEvent}
+     */
+    const touchStartEvent = new ThrottledEvent("touchstart", false, 0);
 
     /**
      * An instance of the 'touchmove' event.
@@ -123,6 +130,12 @@ window.initialiseScrollOverride = (scrollPointClass, stickyScrollPointClass, ski
     const mouseDownEvent = new ThrottledEvent("mousedown", false, 0);
 
     //#endregion
+
+    /**
+     * A reference to the start position of a touch event.
+     * @type {Number}
+     */
+    let touchStartPositionY;
 
     //#endregion
     
@@ -165,6 +178,16 @@ window.initialiseScrollOverride = (scrollPointClass, stickyScrollPointClass, ski
 
         scrollIndexDelta > 0 ? new NextScrollPoint() : new PreviousScrollPoint();
     }
+
+    /**
+     * Handles the rerouting of touch-based scrolling.
+     * @param eventData The event data from a touch move event.
+     * @constructor
+     */
+    function TouchStartControl(eventData)
+    {
+        touchStartPositionY = eventData.touches[0].clientY;
+    }
     
     /**
      * Handles the rerouting of touch-based scrolling.
@@ -175,11 +198,12 @@ window.initialiseScrollOverride = (scrollPointClass, stickyScrollPointClass, ski
     {
         eventData.preventDefault();
 
-        scrollIndexDelta = eventData.deltaY > 0 ? 1 : -1;
-
-        scrollIndexDelta > 0 ? new NextScrollPoint() : new PreviousScrollPoint();
+        let touchEndPositionY = eventData.changedTouches[0].clientY;
         
-        new NextScrollPoint();
+        if (Math.abs(touchEndPositionY - touchStartPositionY) >= touchMoveDistance)
+        {
+            touchStartPositionY > touchEndPositionY ? new NextScrollPoint() : new PreviousScrollPoint();
+        }
     }
     
     /**
@@ -379,6 +403,7 @@ window.initialiseScrollOverride = (scrollPointClass, stickyScrollPointClass, ski
     
     resizeEvent.Subscribe(ResizeReload);
     wheelEvent.Subscribe(WheelControl);
+    touchStartEvent.Subscribe(TouchStartControl);
     touchMoveEvent.Subscribe(TouchMoveControl);
     keydownEvent.Subscribe(KeydownControl);
     scrollEvent.Subscribe(ScrollControl);

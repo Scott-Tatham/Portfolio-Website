@@ -40,6 +40,9 @@ jobs:
       
     - name: Creat docs If Required
       run: mkdir -p docs
+
+    - name: Generate CNAME File
+      run: echo "www.scottytatham.com" > docs/CNAME
       
     - name: Deploy To docs/
       run: |

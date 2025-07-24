@@ -38,15 +38,16 @@ jobs:
     - name: Publish Website
       run: dotnet publish Portfolio-Website.csproj -c Release -o publish
       
-    - name: Creat docs If Required
-      run: mkdir -p docs
+    - name: Initialise docs
+      run: |
+        mkdir -p docs
+        rm -rf docs/*
 
     - name: Generate CNAME File
       run: echo "www.scottytatham.com" > docs/CNAME
       
     - name: Deploy To docs/
       run: |
-        rm -rf docs/*
         cp -r publish/wwwroot/* docs/
         git config user.name "GitHub Actions"
         git config user.email "actions@github.com"

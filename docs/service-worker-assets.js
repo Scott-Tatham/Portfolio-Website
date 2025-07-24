@@ -25,7 +25,7 @@
       "url": "_framework\/icudt_no_CJK.dat"
     },
     {
-      "hash": "sha256-opGY1ig8517+YlFzZtkFY6rKkE2GpdiZLr7\/pEtmLYk=",
+      "hash": "sha256-EpNH6Tjlu\/DTxC47x0e6g2nA\/cd90hJp1NMBPq2ZABo=",
       "url": "_framework\/blazor.boot.json"
     },
     {
@@ -93,7 +93,7 @@
       "url": "_framework\/Microsoft.JSInterop.WebAssembly.wasm"
     },
     {
-      "hash": "sha256-Zo2A9\/slCHVqG1ol8DQhrH\/siQzl7NeFE2gYxdszwtQ=",
+      "hash": "sha256-scxanxEVX0wbuiwzDh+8Q7q34UqgGAzYdxP8CNcCvv0=",
       "url": "_framework\/PortfolioWebsite.wasm"
     },
     {
@@ -497,7 +497,7 @@
       "url": "images\/qr-codes\/LinkedIn QR Code.webp"
     },
     {
-      "hash": "sha256-I26XJwCnKFOd3Asp5s1CACjSIZNKrPRmXpRCv4b5cLw=",
+      "hash": "sha256-Z8LcC9pk0vwTa3H8jdxSLZJEgXXxzkL5lzWCAcFOiUs=",
       "url": "index.html"
     },
     {
@@ -557,5 +557,5 @@
       "url": "pdfs\/Scott-Tatham-Resume.pdf"
     }
   ],
-  "version": "NizOXTfY"
+  "version": "EC3uT9oY"
 };

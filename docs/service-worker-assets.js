@@ -1,5 +1,5 @@
 self.assetsManifest = {
-  "version": "kjhX82tn",
+  "version": "+1DQIEXS",
   "assets": [
     {
       "hash": "sha256-SwPiFq6VhjHpb7c9Gq0Sgh93+4ufW/69RlpsRzxe/2c=",
@@ -58,7 +58,7 @@ self.assetsManifest = {
       "url": "_framework/Microsoft.JSInterop.wasm"
     },
     {
-      "hash": "sha256-z+B4bowNEqe+VghoMW59XHUdJznYoxQCHA3sKUl03g8=",
+      "hash": "sha256-i7Q6PMdEOp6ew7tq52qw/ci+rCmF37xuFpfG62YGUhY=",
       "url": "_framework/PortfolioWebsite.wasm"
     },
     {
@@ -122,7 +122,7 @@ self.assetsManifest = {
       "url": "_framework/System.Text.RegularExpressions.wasm"
     },
     {
-      "hash": "sha256-L9jB0HqPsdOmrtHD/7hi5rBl0pRQ5OzucIGJqAft0uQ=",
+      "hash": "sha256-AjlbYcgexjoHJ2BY8ln8b+9zjuGcMSW/mBdFybtH6nA=",
       "url": "_framework/blazor.boot.json"
     },
     {
@@ -498,7 +498,7 @@ self.assetsManifest = {
       "url": "images/qr-codes/LinkedIn QR Code.webp"
     },
     {
-      "hash": "sha256-Z8LcC9pk0vwTa3H8jdxSLZJEgXXxzkL5lzWCAcFOiUs=",
+      "hash": "sha256-mmfCf0hz9PLPqetl+jJjhiqYPq/TB8utbryrWq+nFbc=",
       "url": "index.html"
     },
     {

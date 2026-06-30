@@ -1,5 +1,5 @@
 self.assetsManifest = {
-  "version": "HXsa9kfP",
+  "version": "3Lf12nxE",
   "assets": [
     {
       "hash": "sha256-SwPiFq6VhjHpb7c9Gq0Sgh93+4ufW/69RlpsRzxe/2c=",
@@ -58,7 +58,7 @@ self.assetsManifest = {
       "url": "_framework/Microsoft.JSInterop.wasm"
     },
     {
-      "hash": "sha256-+bQxZyVFis8fLQdS7OGMByRRGlwXNIqVBPuZhZwQUFM=",
+      "hash": "sha256-vGcvX1QDxnGe83RLPHtHwhK5Fuv3w5yI46TyGp+s8NQ=",
       "url": "_framework/PortfolioWebsite.wasm"
     },
     {
@@ -122,7 +122,7 @@ self.assetsManifest = {
       "url": "_framework/System.Text.RegularExpressions.wasm"
     },
     {
-      "hash": "sha256-VRjek0wdffq6qRTbcidcaj/I9xruz5Yf1H9rPiMMchk=",
+      "hash": "sha256-vdYjfNwcW5nMCmy2RjI3RhgDy7oRlNevztjuuz/jJvU=",
       "url": "_framework/blazor.boot.json"
     },
     {
@@ -550,11 +550,11 @@ self.assetsManifest = {
       "url": "manifest.webmanifest"
     },
     {
-      "hash": "sha256-PN9d2KQYN5HxG1xEK0qFnFIT+C+noih8YpNropEvb9I=",
+      "hash": "sha256-VA+XLaMeK1JP97PSE6DOmIpGrc+dL+yuh0y6itw6WuA=",
       "url": "pdfs/Scott-Tatham-Resume-Print.pdf"
     },
     {
-      "hash": "sha256-PN9d2KQYN5HxG1xEK0qFnFIT+C+noih8YpNropEvb9I=",
+      "hash": "sha256-VA+XLaMeK1JP97PSE6DOmIpGrc+dL+yuh0y6itw6WuA=",
       "url": "pdfs/Scott-Tatham-Resume.pdf"
     }
   ]
